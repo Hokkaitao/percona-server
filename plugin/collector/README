@@ -1,0 +1,18 @@
+## 1.Brief introduction
+collector is a MySQL plugin to collect environment and system interval information when something occurs.
+
+## Usage
+
+### Install & Uninstall
+mysql> INSTALL PLUGIN collector SONAME 'collector.so';
+mysql> UNINSTALL PLUGIN collector;
+
+### Show plugin information
+mysql> SELECT * FROM mysql.plugin;
+mysql> SHOW PLUGINS\G;
+mysql> SELECT * FROM information_schema.plugins WHERE PLUGIN_NAME='collector'\G;
+
+### Set & show variables
+
+### Log info
+
